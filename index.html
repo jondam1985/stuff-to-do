@@ -1,30 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/stylesheet/style.css">
-    <title>Stuff To Do Today</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <div>
-      <h1 class="title">Work Day Scheduler</h1>
-      <p class="subtitle">A digial calendar app for scheduling your work day</p>
-    </div>
-    <div>
-      <p id="currentDay" class="time"></p>
-      <p id="currentHour" class="time"></p>
-    </div>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Montserrat|Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <title>Stuff To Do Today</title>
+</head>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+<body>
+  <header class="jumbotron">
+    <div class="titles">
+      <div class="left_title">
+        <h1 class="title">Work Day Scheduler</h1>
+        <p class="subtitle">A digial calendar app for scheduling your work day</p>
+      </div>
+      <div class="right_title">
+        <p id="currentDate" class="time"></p>
+        <p id="currentHour" class="time"></p>
+      </div>
+    </div>
+    <div class="legend">
+      <div id="past">Past hours</div>
+      <div id="now">Current hour</div>
+      <div id="future">Upcoming hours</div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="hour_blocks">
+      <div class="hours" id="0">12AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="0.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="1">1AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="1.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="2">2AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="2.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="3">3AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="3.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="4">4AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="4.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="5">5AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="5.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="6">6AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="6.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="7">7AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="7.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="8">8AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="8.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="9">9AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="9.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="10">10AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="10.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="11">11AM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="11.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="12">12PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="12.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="13">1PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="13.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="14">2PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="14.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="15">3PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="15.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="16">4PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="16.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="17">5PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="17.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="18">6PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="18.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="19">7PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="19.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="20">8PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="20.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="21">9PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="21.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="22">10PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="22.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+    <div class="hour_blocks">
+      <div class="hours" id="23">11PM</div>
+      <textarea maxlength="100" class="to_do"></textarea>
+      <div class="save">
+        <img id="23.0" src="assets/icons/save.svg" alt="test" class="save_btn">
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer>
+    Icons provided by some guy
+  </footer>
+
+  <script src="assets/scripts/moment.js"></script>
+  <script src="assets/scripts/scheduleObj.js"></script>
+  <script src="assets/scripts/script.js"></script>
+</body>
+
 </html>
