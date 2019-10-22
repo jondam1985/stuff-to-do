@@ -12,17 +12,26 @@
 </head>
 
 <body>
+  <!--Header section-->
   <header class="jumbotron">
+
+    <!--Div containing titles and date information-->
     <div class="titles">
+
+      <!--Div containing titles and subtitles-->
       <div class="left_title top_title">
         <h1 class="title">Work Day Scheduler</h1>
         <p class="subtitle">A digial calendar app for scheduling your work day</p>
       </div>
+
+      <!--Div containing the current date and time. Updated every second-->
       <div class="right_title bottom_title">
         <p id="currentDate" class="time"></p>
         <p id="currentHour" class="time"></p>
       </div>
     </div>
+
+    <!--Color legend-->
     <div class="legend">
       <div id="past">Past hours</div>
       <div id="now">Current hour</div>
@@ -30,6 +39,8 @@
     </div>
   </header>
   <div class="container">
+
+    <!--24 divs containing a time slot, textarea and save button-->
     <div class="hour_blocks">
       <div class="hours" id="0">12AM</div>
       <textarea maxlength="100" class="to_do"></textarea>
@@ -200,6 +211,8 @@
     </div>
   </div>
   </div>
+
+  <!--Footer containing credits for the icons-->
   <footer>
     Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a
       href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
