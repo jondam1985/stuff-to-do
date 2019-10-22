@@ -1,143 +1,223 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .jumbotron {
-    background-color: #DCEED1;
-    height: 220px;
-    padding: 20px 50px 0 50px;
+	background-color: #dceed1;
+	height: 220px;
+	padding: 20px 50px 0 50px;
 }
 
 .titles {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    height: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	height: 150px;
 }
 
 .left_title {
-    width: 60%;
-    min-width: 400px;
-    font-family: 'Alfa Slab One', cursive;
-    padding: 10px;
+	width: 60%;
+	min-width: 350px;
+	font-family: "Alfa Slab One", cursive;
+	padding: 10px;
 }
 
 .title {
-    color: #736372;
-    font-size: 3.5vw;
-    text-align: center;
+	color: #736372;
+	font-size: 3.5vw;
+	text-align: center;
 }
 
 .subtitle {
-    color: #423141;
-    font-size: 1.5vw;
-    text-align: center;
+	color: #423141;
+	font-size: 1.5vw;
+	text-align: center;
 }
 
 .right_title {
-    width: 40%;
-    min-width: 250px;
-    font-family: 'Press Start 2P', cursive;
-    padding: 30px 5px 0 5px;
-    font-size: 1.25vw;
+	width: 40%;
+	min-width: 250px;
+	font-family: "Press Start 2P", cursive;
+	padding: 30px 5px 0 5px;
+	font-size: 1.25vw;
 }
 
 .time {
-    text-align: center;
-    color: #736372;
+	text-align: center;
+	color: #736372;
 }
 
 #currentDate {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .legend {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+	display: flex;
+	width: 100%;
+	height: 50px;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
 .legend div {
-    width: 33.33%;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.25vw;
-    padding-top: 15px;
-    color: #DCEED1;
+	width: 33.33%;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 1.25vw;
+	padding-top: 15px;
+	color: #dceed1;
 }
 
 #past {
-    background-color: #736372;
+	background-color: #736372;
 }
 
 #now {
-    background-color: #A18276;
+	background-color: #a18276;
 }
 
 #future {
-    background-color: #7A918D;
+	background-color: #7a918d;
 }
 
 .container {
-    width: 80%;
-    margin: 30px auto 0 auto;
+	width: 80%;
+	margin: 30px auto 0 auto;
 }
 
 .hour_blocks {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 65px;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 65px;
 }
 
 .hours {
-    width: 10%;
-    text-align: right;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
-    padding: 25px 10px;
-    border-top: 1px solid #DCEED1;
-    border-bottom: 1px solid #DCEED1;
+	width: 10%;
+	text-align: right;
+	font-family: "Press Start 2P", cursive;
+	font-size: 16px;
+	padding: 25px 10px;
+	border-top: 1px solid #dceed1;
+	border-bottom: 1px solid #dceed1;
 }
 
 .to_do {
-    width: 80%;
-}
-
-.save {
-    width: 10%;
+	width: 80%;
 }
 
 textarea {
-    resize: none;
-    padding: 15px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: blanchedalmond;
-    font-weight: 600;
-    overflow: hidden;
-    border: 1px solid #DCEED1;
+	resize: none;
+	padding: 15px 20px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	color: blanchedalmond;
+	font-weight: 600;
+	overflow: hidden;
+	border: 1px solid #dceed1;
 }
 
 .save {
-    border: 1px solid #423141;
-    text-align: center;
-    color: #736372;
-    background-color: #DCEED1;
-    padding-top: 10px;
+	width: 10%;
+	padding-top: 15px;
+	border: 1px solid #423141;
+	text-align: center;
+	color: #736372;
+	background-color: #dceed1;
 }
 
 img {
-    width: 40px;
-    height: auto;
+	width: 80%;
+	max-width: 40px;
+	height: auto;
 }
 
 footer {
-    height: 25px;
-    text-align: center;
-    margin-top: 50px;
+	height: 40px;
+	padding-top: 12px;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	background-color: #dceed1;
+}
+
+@media only screen and (max-width: 860px) {
+	.jumbotron {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.titles {
+		display: block;
+		width: 100%;
+	}
+
+	.top_title,
+	.bottom_title {
+		width: 100%;
+	}
+
+	.bottom_title {
+		padding-top: 15px;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.subtitle {
+		font-size: 15px;
+	}
+
+	.time {
+		font-size: 12px;
+	}
+
+	.legend div {
+		font-size: 12px;
+	}
+
+	.hour_blocks {
+		height: 80px;
+	}
+
+	.hours {
+		font-size: 1.5vw;
+	}
+
+	.save {
+		padding-top: 20px;
+	}
+
+	img {
+		width: 20px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.title {
+		font-size: 25px;
+	}
+
+	.subtitle {
+		font-size: 13px;
+	}
+
+	.hour {
+		padding-right: 15x;
+	}
+
+	textarea {
+		font-size: 12px;
+		padding: 10px 15px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.subtitle {
+		font-size: 12px;
+	}
 }
