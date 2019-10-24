@@ -39,6 +39,11 @@ document.getElementById("main").addEventListener("load", init());
 
 function init() {
 
+    var scheduleObj = {
+        currentDate:'',
+        entries: ['','','','','','','','','','','','','','','','','','','','','','','','']
+    }
+
     getDateTime();
 
     formatTextFields();
