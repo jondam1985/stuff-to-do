@@ -14,10 +14,10 @@ The web application is responsive
 
 ## Table of Contents
 
-- [Installation](https://github.com/jondam1985/password-generator#Installation)
-- [Usage](https://github.com/jondam1985/password-generator#Usage)
-- [Credits](https://github.com/jondam1985/password-generator#Credits)
-- [License](https://github.com/jondam1985/password-generator#License)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Credits](#Credits)
+- [License](#License)
 
 ## Installation
 
