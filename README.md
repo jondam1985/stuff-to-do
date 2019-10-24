@@ -48,4 +48,4 @@ Date and time functions created with [moment.js](https://momentjs.com).
 
 ## License
 
-This project is licensed under the MIT license. See [license.txt](https://github.com/jondam1985/password-generator/blob/master/license.txt) file for details.
+This project is licensed under the MIT license. See [license.txt](https://github.com/jondam1985/stuff-to-do-today/blob/master/license.txt) file for details.
