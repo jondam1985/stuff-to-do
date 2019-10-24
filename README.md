@@ -46,6 +46,10 @@ Icons created by [Flaticons](https://www.flaticons.com).
 
 Date and time functions created with [moment.js](https://momentjs.com).
 
+Color palette provided by [coolors.co](https://coolors.co).
+
+Fonts provided by [Google Fonts](https://fonts.google.com).
+
 ## License
 
 This project is licensed under the MIT license. See [license.txt](https://github.com/jondam1985/stuff-to-do-today/blob/master/license.txt) file for details.
